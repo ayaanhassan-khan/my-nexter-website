@@ -1,0 +1,20 @@
+@media only screen and (max-width:750px) {
+    .container {
+        width: 200%;
+        grid-template-columns: 6rem 75vw 1fr;
+        grid-template-rows: 80vh 1fr 1fr;
+        grid-template-areas: "nav header header"
+                             "nav realtor realtors"
+                             "nav services services";
+    }
+
+    .realtors {
+        grid-column: 2 / span 2;
+    }
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
